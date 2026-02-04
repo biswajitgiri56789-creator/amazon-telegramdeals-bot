@@ -38,7 +38,7 @@ def create_post_message(product_name, product_url):
 def main():
     product_name = "SWORNOF Womens Kanjivaram Patola Blouse"
     message = create_post_message(product_name, PRODUCT_LONG_LINK)
-    bot.send_message(chat_id=CHANNEL_ID, text=message, parse_mode="Markdown")
+    bot.send_message(chat_id=CHANNEL_ID, text=message)
     print(f"Posted to {CHANNEL_ID} at {datetime.now()}")
 
 # ===== ENTRY POINT =====
